@@ -253,7 +253,7 @@ class nexmo
         $search_url = self::$search_url . '/' . $country_code;
 
         if (isset($pattern)) {
-            $params = ["pattern" => $params];
+            $params = ["pattern" => $pattern];
         }
 
         return $this->request('get', $search_url, $params, $options);
